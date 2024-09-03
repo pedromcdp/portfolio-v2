@@ -125,9 +125,11 @@ export default function Home(): JSX.Element {
             Pro<span className="text-primary">jects</span>
           </h2>
         </Reveal>
-        {data.projects.map((item, index) => (
-          <ProjectCard key={index} project={item} />
-        ))}
+        <Reveal containerClasses="w-full md:w-4/5 xl:w-3/5">
+          {data.projects.map((item, index) => (
+            <ProjectCard key={index} project={item} />
+          ))}
+        </Reveal>
       </section>
     </motion.main>
   );
