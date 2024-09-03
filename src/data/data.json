@@ -1,0 +1,170 @@
+{
+  "experiences": [
+    {
+      "type": "Research Grant - Augmanity",
+      "title": "Frontend Developer",
+      "identity": "University of Aveiro",
+      "timeline": "October 2022 - July 2023",
+      "activities": [
+        "Responsible for developing the frontend of a web platform focused on workforce engagement using React;",
+        "Selection of technologies for the platform;",
+        "Integration of the frontend with a .NET API.;",
+        "Documentation of the solutions developed."
+      ]
+    },
+    {
+      "type": "Curricular Internship",
+      "title": "Usability & User Experience",
+      "identity": "Altice Labs - Aveiro",
+      "timeline": "May 2020 - July 2020",
+      "activities": [
+        "Needs and requirements analysis",
+        "Technological analysis associated with the component;",
+        "Development of the Angular component;",
+        "Usability tests."
+      ]
+    },
+    {
+      "type": "Academic Internship",
+      "title": "Web Developer",
+      "identity": "Decimal Informática e Gestão, Lda - Aveiro",
+      "timeline": "October 2015 - April 2016",
+      "activities": [
+        "Responsible for maintaining and updating content on the company’s various websites;",
+        "Maintenance of the company’s online shop;",
+        "Development of an application in C#."
+      ]
+    },
+    {
+      "type": "“iHelp” iOS Application",
+      "title": "Professional Aptitude Project",
+      "identity": "Aveiro",
+      "timeline": "2016",
+      "activities": [
+        "Conducted Market Analysis;",
+        "Designed the entire user experience and user interface;",
+        "Developed the iOS application using Objective-C;",
+        "Presentation of the application at the Escola Secundária José Estêvão & Catholic University of Porto."
+      ]
+    }
+  ],
+  "skills": [
+    "JavaScript",
+    "TypeScript",
+    "React.js",
+    "Next.js",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Tailwind CSS",
+    "React Native",
+    "Git",
+    "Docker",
+    "Expo"
+  ],
+  "projects": [
+    {
+      "title": "Dynamic FullStack Challenge",
+      "date": "2024",
+      "technologies": [
+        "FullStack",
+        "React",
+        "Next",
+        "Zod",
+        "React Hook Form",
+        "MongoDB",
+        "Jest",
+        "React Testing Library",
+        "Docker",
+        "TypeScript"
+      ],
+      "description": "To address a coding challenge, I developed a system that functions as a developer registry. The backend API supports creating, retrieving, and searching developer records, while the frontend allows users to easily add new records and check existing ones. The project is designed with a focus on functionality, ease of use, and scalability, with optional enhancements such as Docker deployment, and automated testing.",
+      "github": "https://github.com/pedromcdp/dynamik-fs-challenge",
+      "url": "https://dfsc.pedrocruto.pt",
+      "image": ""
+    },
+    {
+      "title": "Pulse - Lemmy Client",
+      "date": "2023-present",
+      "technologies": [
+        "Mobile",
+        "React Native",
+        "Expo",
+        "Zustand",
+        "TypeScript"
+      ],
+      "description": "Pulse is a React Native application designed to offer a premium mobile experience for Lemmy users. Inspired by Apollo for Reddit, it features a sleek design, personalized feeds, and comprehensive community engagement.",
+      "github": "https://github.com/pedromcdp/Pulse-for-Lemmy",
+      "url": "",
+      "image": ""
+    },
+    {
+      "title": "StoryArc",
+      "description": "StoryArc was a content archiving platform that involved sharing and consulting information about spaces and their evolution over the years, in order to preserve heritage memory. ",
+      "date": "2021-2022",
+      "technologies": [
+        "FullStack",
+        "Mobile",
+        "React",
+        "Next.js",
+        "React Query",
+        "Redux",
+        "Tailwind",
+        "React Hook Form",
+        "React Native",
+        "Expo",
+        "Express.js",
+        "MongoDB",
+        "Docker",
+        "PWA"
+      ],
+      "github": "https://github.com/pedromcdp/storyarc-frontend",
+      "url": "https://storyarc.pt",
+      "image": "/storyarc.webp"
+    },
+    {
+      "title": "MovieHUB",
+      "description": "Project developed as part of the Web Technologies and Development course of the Master's Degree in Communication and Web Technologies at the University of Aveiro. MovieHUB is a platform that allows you explore all the films and series in the world 🌎.",
+      "date": "2021",
+      "technologies": [
+        "Frontend",
+        "React",
+        "Next.js",
+        "Redux",
+        "Redux Toolkit",
+        "Tailwind",
+        "Docker"
+      ],
+      "github": "https://github.com/pedromcdp/movie-hub",
+      "url": "https://moviehub.pedrocruto.pt",
+      "image": ""
+    },
+    {
+      "title": "Covid Track",
+      "description": "During the COVID-19 pandemic, I developed a web app that allows users to track daily and total COVID-19 cases for every country, providing up-to-date information to help monitor the global situation.",
+      "date": "2021",
+      "technologies": ["Frontend", "React"],
+      "github": "https://github.com/pedromcdp/covid-track",
+      "url": "https://covid.pedrocruto.pt/",
+      "image": ""
+    },
+    {
+      "title": "Simon Says Game",
+      "description": "As a personal project, I developed a Simon Says replica game using pure HTML, CSS, and JavaScript.",
+      "date": "2021",
+      "technologies": ["Frontend", "HTML", "Javascript", "CSS"],
+      "github": "https://github.com/pedromcdp/simon-says-game",
+      "url": "https://simon.pedrocruto.pt/",
+      "image": "/simon2.webp"
+    },
+    {
+      "title": "iHelp",
+      "description": "For my Professional Aptitude Project, I developed a first aid app that provides users with essential guidance on first aid procedures, along with additional features like heart rate monitoring. The app is designed to be a practical tool for quickly accessing life-saving information.",
+      "date": "2016",
+      "technologies": ["Mobile", "iOS", "Objective-C"],
+      "github": "",
+      "url": "https://youtu.be/b54XtKlKChg",
+      "image": "/ihelp.webp"
+    }
+  ]
+}
