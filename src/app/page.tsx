@@ -22,9 +22,7 @@ export default function Home(): JSX.Element {
       <section id="about" className="mx-6">
         <Reveal>
           <div className="my-6 flex flex-col items-center justify-center">
-            <h2 className="text-4xl font-bold">
-              About <span className="text-primary">Me</span>
-            </h2>
+            <h2 className="text-primary text-4xl font-bold">About Me</h2>
             <p className="text-justify md:w-3/4 mt-4 leading-7 text-balance break-words font-medium">
               I am 25 years old and live in Aveiro. I earned a Master&apos;s
               degree in Communication and Web Technologies from the University
@@ -44,26 +42,24 @@ export default function Home(): JSX.Element {
         className="m-6 flex flex-col items-center justify-center"
       >
         <Reveal>
-          <h2 className="text-4xl font-bold">
-            Experien<span className="text-primary">ce</span>
-          </h2>
+          <h2 className="text-4xl font-bold text-primary">Experience</h2>
         </Reveal>
         <div className="flex flex-col gap-5 mt-6 mb-4 md:w-3/4">
           <Reveal>
-            <div className="divide-y">
+            <div className="divide-y dark:border-b/60">
               {data.experiences.map((experience) => (
                 <div
                   key={experience.type}
-                  className="grid grid-flow-col py-2 grid-cols-6 w-full"
+                  className="grid grid-flow-col py-4 grid-cols-6 w-full"
                 >
                   <div className="flex flex-col justify-between col-span-2 gap-y-10">
-                    <div className="flex flex-col">
-                      <span className="font-semibold leading-4 text-wrap">
+                    <div className="flex flex-col gap-2 sm:gap-1 leading-5">
+                      <span className="font-semibold text-wrap">
                         {experience.type}
                       </span>
                       <span className="text-primary">{experience.title}</span>
                     </div>
-                    <div className="flex flex-col leading-4 text-sm">
+                    <div className="flex flex-col leading-4 text-sm gap-2 sm:gap-0.5">
                       <span className="text-black/60 dark:text-white/60 text-pretty">
                         {experience.identity}
                       </span>
@@ -73,20 +69,17 @@ export default function Home(): JSX.Element {
                     </div>
                   </div>
                   <div className="grid-cols-subgrid col-span-1 sm:hidden" />
-                  <div className="flex flex-col items-end col-span-4">
-                    {experience.activities.map(
-                      (activity: string, index: number) => (
-                        <span
-                          key={activity}
-                          className={
-                            "list-item text-justify font-medium hyphens-auto md:w-3/5 py-1 " +
-                            (index % 2 === 0 && "text-primary")
-                          }
-                        >
-                          {activity}
-                        </span>
-                      )
-                    )}
+                  <div className="flex flex-col items-start sm:items-end col-span-4">
+                    {experience.activities.map((activity: string) => (
+                      <span
+                        key={activity}
+                        className={
+                          "list-item text-justify hyphens-auto md:w-3/5 py-1 "
+                        }
+                      >
+                        {activity}
+                      </span>
+                    ))}
                   </div>
                 </div>
               ))}
@@ -99,17 +92,12 @@ export default function Home(): JSX.Element {
         className="flex flex-col items-center justify-center"
       >
         <Reveal>
-          <h2 className="text-4xl font-bold">
-            Skil<span className="text-primary">ls</span>
-          </h2>
+          <h2 className="text-4xl font-bold text-primary">Skills</h2>
         </Reveal>
         <Reveal>
-          <div className="grid grid-cols-1 sm:grid-cols-4 grid-rows-3 sm:grid-rows-3 grid-flow-col gap-6 py-6">
+          <div className="grid grid-cols-1 sm:grid-cols-4 grid-rows-4 sm:grid-rows-3 grid-flow-col gap-6 py-6 justify-items-center">
             {data.skills.map((skill) => (
-              <span
-                key={skill}
-                className="col-span-1 font-medium even:text-primary"
-              >
+              <span key={skill} className="col-span-1 font-medium">
                 {skill}
               </span>
             ))}
@@ -121,9 +109,7 @@ export default function Home(): JSX.Element {
         className="m-6 flex flex-col items-center justify-center"
       >
         <Reveal>
-          <h2 className="text-4xl font-bold">
-            Pro<span className="text-primary">jects</span>
-          </h2>
+          <h2 className="text-4xl font-bold text-primary">Projects</h2>
         </Reveal>
         <Reveal containerClasses="w-full md:w-4/5 xl:w-3/5">
           {data.projects.map((item, index) => (
@@ -134,9 +120,3 @@ export default function Home(): JSX.Element {
     </motion.main>
   );
 }
-
-// {
-//   "title": "iHelp",
-//   "description": "iOS application that allows users to request help from other users.",
-//   "technologies": ["Objective-C"]
-// }

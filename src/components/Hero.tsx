@@ -52,7 +52,7 @@ const Hero = () => {
               <Button
                 color="primary"
                 variant="bordered"
-                className="w-48 text-lg h-12"
+                className="w-full sm:w-48 text-lg h-12"
                 radius="sm"
                 href="/Pedro_Miguel_Pereira_2024.pdf"
                 as="a"
@@ -64,7 +64,7 @@ const Hero = () => {
               <Button
                 as={Link}
                 color="primary"
-                className="w-48 text-lg h-12"
+                className="w-full sm:w-48 text-lg h-12"
                 radius="sm"
                 href="mailto:pedromcdp@gmail.com"
               >
