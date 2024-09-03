@@ -61,7 +61,11 @@ const NavBar = (): JSX.Element => {
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link className="w-full" href="#">
+            <Link
+              className="w-full"
+              href={item.href}
+              onClick={() => setIsOpen(false)}
+            >
               {item.name}
             </Link>
           </NavbarMenuItem>
