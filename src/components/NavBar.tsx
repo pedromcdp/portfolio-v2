@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import {
   Button,
   Navbar,
@@ -15,9 +15,18 @@ import { Sun, Moon, Github, Linkedin } from "lucide-react";
 import { menuItems } from "@/utils/MenuItems";
 import { useTheme } from "next-themes";
 
-const NavBar = (): JSX.Element => {
+const NavBar = (): JSX.Element | null => {
+  const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, [setTheme]);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <Navbar
@@ -32,9 +41,9 @@ const NavBar = (): JSX.Element => {
           aria-label={isOpen ? "Fechar Menu" : "Abrir Menu"}
         />
         <NavbarBrand>
-          <p className="font-medium text-xl">
+          <Link href={"/"} className="font-medium text-xl">
             Pedro <span className="text-primary">Cruto</span>
-          </p>
+          </Link>
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent className="gap-8" justify="end">
@@ -53,8 +62,8 @@ const NavBar = (): JSX.Element => {
             className="text-primary"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           >
-            <Sun className="rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-            <Moon className="absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+            <Sun className="absolute -rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+            <Moon className="rotate-0 scale-100 transition-all dark:rotate-90 dark:scale-0" />
           </Button>
         </NavbarItem>
       </NavbarContent>
