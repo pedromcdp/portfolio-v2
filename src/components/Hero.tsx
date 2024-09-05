@@ -66,7 +66,7 @@ const Hero = () => {
                 color="primary"
                 className="w-full sm:w-48 text-lg h-12"
                 radius="sm"
-                href="mailto:pedromcdp@gmail.com"
+                href="mailto:contact@pedrocruto.pt"
               >
                 <Mail size={20} />
                 Contact me

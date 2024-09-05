@@ -17,7 +17,7 @@ const menuItems: MenuItem[] = [
   },
   {
     name: "Contact",
-    href: "mailto:pedromcdp@gmail.com",
+    href: "mailto:contact@pedrocruto.pt",
   },
 ];
 
