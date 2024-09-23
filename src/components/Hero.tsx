@@ -48,7 +48,7 @@ const Hero = () => {
               <span className="text-primary"> Quality</span> and{" "}
               <span className="text-primary">Detail</span>.
             </p>
-            <div className="mt-4 lg:mt-10 flex flex-col md:flex-row gap-2 lg:gap-4">
+            <div className="mt-4 lg:mt-10 flex flex-col md:flex-row gap-2 lg:gap-4 ">
               <Button
                 color="primary"
                 variant="bordered"
@@ -73,14 +73,13 @@ const Hero = () => {
               </Button>
             </div>
           </div>
-          <div className="relative select-none w-64 h-64 md:w-96 md:h-96 xl:w-[30rem] xl:h-[30rem] flex-none transition-all ease-in-out">
-            <Image
-              src="/1x1.webp"
-              alt="Pedro Cruto"
-              fill
-              className="rounded-full object-cover border-primary/70 border-3 p-0.5  pointer-events-none"
-            />
-          </div>
+          <Image
+            src="/profile.png"
+            alt="Pedro Cruto"
+            width={500}
+            height={500}
+            className="pointer-events-none"
+          />
         </div>
       </div>
       <motion.div

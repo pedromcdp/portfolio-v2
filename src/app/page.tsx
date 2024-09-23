@@ -108,10 +108,10 @@ export default function Home(): JSX.Element {
         id="projects"
         className="m-6 flex flex-col items-center justify-center"
       >
-        <Reveal>
+        <Reveal containerClasses="mb-6">
           <h2 className="text-4xl font-bold text-primary">Projects</h2>
         </Reveal>
-        <Reveal containerClasses="w-full md:w-4/5 xl:w-3/5">
+        <Reveal containerClasses="w-full lg:w-4/5 grid grid-cols-4 gap-4 transition-all durantion-150 ease-in-out">
           {data.projects.map((item, index) => (
             <ProjectCard key={index} project={item} />
           ))}

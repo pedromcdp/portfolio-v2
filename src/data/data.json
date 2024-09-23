@@ -81,7 +81,7 @@
       "description": "To address a coding challenge, I developed a system that functions as a developer registry. The backend API supports creating, retrieving, and searching developer records, while the frontend allows users to easily add new records and check existing ones. The project is designed with a focus on functionality, ease of use, and scalability, with optional enhancements such as Docker deployment, and automated testing.",
       "github": "https://github.com/pedromcdp/dynamik-fs-challenge",
       "url": "https://dfsc.pedrocruto.pt",
-      "image": ""
+      "image": "/dfsc.webp"
     },
     {
       "title": "Pulse - Lemmy Client",
@@ -96,7 +96,7 @@
       "description": "Pulse is a React Native application designed to offer a premium mobile experience for Lemmy users. Inspired by Apollo for Reddit, it features a sleek design, personalized feeds, and comprehensive community engagement.",
       "github": "https://github.com/pedromcdp/Pulse-for-Lemmy",
       "url": "",
-      "image": ""
+      "image": "/pulse.webp"
     },
     {
       "title": "StoryArc",
@@ -137,7 +137,7 @@
       ],
       "github": "https://github.com/pedromcdp/movie-hub",
       "url": "https://moviehub.pedrocruto.pt",
-      "image": ""
+      "image": "/moviehub.webp"
     },
     {
       "title": "Covid Track",
@@ -146,7 +146,7 @@
       "technologies": ["Frontend", "React"],
       "github": "https://github.com/pedromcdp/covid-track",
       "url": "https://covid.pedrocruto.pt/",
-      "image": ""
+      "image": "/covid.webp"
     },
     {
       "title": "Simon Says Game",
@@ -155,7 +155,7 @@
       "technologies": ["Frontend", "HTML", "Javascript", "CSS"],
       "github": "https://github.com/pedromcdp/simon-says-game",
       "url": "https://simon.pedrocruto.pt/",
-      "image": "/simon2.webp"
+      "image": "/simon.webp"
     },
     {
       "title": "iHelp",

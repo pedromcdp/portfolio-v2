@@ -19,8 +19,8 @@ function ProjectCard({ project }: { project: IProject }) {
   const imageUrl = image === "" ? "/fallback.webp" : image;
 
   return (
-    <article className="flex min-h-72 flex-col lg:flex-row  items-center lg:items-stretch mt-4 font-medium shadow-lg py-4 px-6 rounded-lg h-auto gap-4 transition-all durantion-150 ease-in-out">
-      <div className="hidden lg:flex relative flex-none w-80">
+    <article className="flex flex-col gap-4 col-span-4 lg:col-span-2 border dark:border-gray-600/60 font-medium shadow-lg py-4 px-6 rounded-xl h-auto transition-all durantion-150 ease-in-out">
+      <div className="relative aspect-video">
         <Image
           src={imageUrl}
           alt={title}
