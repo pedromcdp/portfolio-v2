@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -54,7 +56,7 @@ const Hero = () => {
                 variant="bordered"
                 className="w-full sm:w-48 text-lg h-12"
                 radius="sm"
-                href="/Pedro_Miguel_Pereira_2024.pdf"
+                href="/Pedro_Miguel_Pereira.pdf"
                 as="a"
                 download
               >
