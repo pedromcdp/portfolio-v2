@@ -49,18 +49,27 @@
     }
   ],
   "skills": [
+    "Angular",
+    "Docker",
+    "ESLint",
+    "Expo",
+    "Express",
+    "Git",
     "JavaScript",
-    "TypeScript",
-    "React.js",
+    "Jest",
+    "MongoDB",
     "Next.js",
     "Node.js",
-    "Express",
-    "MongoDB",
-    "Tailwind CSS",
+    "Prettier",
+    "React",
     "React Native",
-    "Git",
-    "Docker",
-    "Expo"
+    "React.js",
+    "Redux",
+    "Tailwind CSS",
+    "Testing Library",
+    "TypeScript",
+    "Vite",
+    "Zustand"
   ],
   "projects": [
     {

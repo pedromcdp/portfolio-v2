@@ -1,3 +1,4 @@
+"use client";
 /* eslint-disable react-hooks/exhaustive-deps */
 import { motion, useAnimation, useInView } from "framer-motion";
 import { ReactNode, useEffect, useRef } from "react";
@@ -11,13 +12,13 @@ const Reveal = ({
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true });
-  const constrols = useAnimation();
+  const controls = useAnimation();
 
   useEffect(() => {
     if (isInView) {
-      constrols.start("visible");
+      controls.start("visible");
     } else {
-      constrols.start("hidden");
+      controls.start("hidden");
     }
   }, [isInView]);
 
@@ -29,7 +30,7 @@ const Reveal = ({
         visible: { opacity: 1, y: 0 },
       }}
       initial="hidden"
-      animate={constrols}
+      animate={controls}
       exit="hidden"
       transition={{ duration: 0.5 }}
       className={containerClasses}

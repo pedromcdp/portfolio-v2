@@ -1,5 +1,4 @@
 import { Button } from "@nextui-org/react";
-import { Reveal } from "./Reveal";
 import Image from "next/image";
 
 interface IProject {
