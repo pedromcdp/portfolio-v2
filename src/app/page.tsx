@@ -82,7 +82,7 @@ export default function Home(): JSX.Element {
           <h2 className="text-4xl font-bold text-primary">Skills</h2>
         </Reveal>
         <Reveal>
-          <div className="grid grid-cols-1 sm:grid-cols-4 grid-rows-4 sm:grid-rows-3 grid-flow-col gap-6 py-6 justify-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-4 grid-rows-10 sm:grid-rows-3 grid-flow-col gap-6 py-6 justify-items-center">
             {data.skills.map((skill) => (
               <span key={skill} className="col-span-1 font-medium">
                 {skill}
